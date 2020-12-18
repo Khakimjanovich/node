@@ -1,5 +1,5 @@
 ###login
-POST http://localhost:4000/login
+POST http://localhost:3000/login
 Content-Type: application/json
 
 {
@@ -7,7 +7,7 @@ Content-Type: application/json
 }
 
 ###refreshtoken
-POST http://localhost:4000/token
+POST http://localhost:3000/token
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ###logout
-DELETE http://localhost:4000/logout
+DELETE http://localhost:3000/logout
 Content-Type: application/json
 
 {
@@ -23,11 +23,8 @@ Content-Type: application/json
 }
 
 
-
-
-
 ###get user posts
-GET http://localhost:3000/
+GET http://localhost:3001/
 Accept: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYwODI4MzczNywiZXhwIjoxNjA4MjgzNzU3fQ.X69_soXuyjstlFtNWb4ZsHbH6xDRP-9WCU9LlkAZCqw
 
