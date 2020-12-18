@@ -4,8 +4,9 @@
   "description": "Node js learning process",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js",
-    "authServer": "nodemon authServer.js",
+    "GetPostServerStart": "nodemon jwt/getPostServer.js",
+    "authServerStart": "nodemon jwt/authServer.js",
+    "passportServerStart": "nodemon passport/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -35,4 +35,4 @@ function generateAccessToken(user) {
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '20s'})
 }
 
-app.listen(4000)
+app.listen(3000)
