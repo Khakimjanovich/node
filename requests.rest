@@ -1,0 +1,34 @@
+###login
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "Kyle"
+}
+
+###refreshtoken
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYwODI4MzM4M30.WNadRref73ysGcpJ8UoEDQOBaH6FCWf_QZL2iJDytBw"
+}
+
+###logout
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYwODI4MzczNywiZXhwIjoxNjA4MjgzNzU3fQ.X69_soXuyjstlFtNWb4ZsHbH6xDRP-9WCU9LlkAZCqw"
+}
+
+
+
+
+
+###get user posts
+GET http://localhost:3000/
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTYwODI4MzczNywiZXhwIjoxNjA4MjgzNzU3fQ.X69_soXuyjstlFtNWb4ZsHbH6xDRP-9WCU9LlkAZCqw
+
+
