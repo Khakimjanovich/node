@@ -1,11 +1,9 @@
 const mongoose = require("mongoose");
 module.exports = app => {
-    mongoose.connect('mongodb://127.0.0.1:3306/cart_node', {
+    mongoose.connect('mongodb://localhost:27017/cart', {
         useUnifiedTopology: true,
         useNewUrlParser: true,
-        useFindAndModify: false,
-        user: 'root',
-        pass: 'root'
+        useFindAndModify: false
     }).then(res => console.log("connected")).catch(err => console.log(err))
     mongoose.Promise = global.Promise;
     process.on("SIGINT", cleanup);
@@ -15,7 +13,6 @@ module.exports = app => {
         app.set("mongoose", mongoose);
     }
 };
-
 function cleanup() {
     mongoose.connection.close(function () {
         process.exit(0);
